@@ -1,0 +1,216 @@
+@import "/css/normalize.css";
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v22-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/poppins-v22-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v22-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+  background-image: url(/images/bg-image.svg);
+
+  background-color: #ff7979;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+/* gloval end */
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* content info start */
+.content__info {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 525px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.content__info__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: -0.52px;
+}
+/* content info end */
+
+/* content form start */
+.content__form__wrapper {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+}
+
+.form__blue-btn {
+  background-color: #5e54a4;
+  color: white;
+  border-radius: 10px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 112px;
+  padding-right: 112px;
+  margin-bottom: 24px;
+  border: none;
+  box-shadow: 0px 8px 0px 0px #00000025;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.blue-btn__w-text {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.27px;
+}
+
+.content__form {
+  width: 100%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px 0px #00000025;
+}
+
+.content__form {
+  padding: 40px;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  padding-left: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #dedede;
+  margin-bottom: 20px;
+  color: #3d3b48;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  border-radius: 5px;
+}
+
+.form__btn {
+  background-color: #38cc8b;
+  width: 460px;
+  padding: 15px 133px 15px 134px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 8px;
+  box-shadow: 0px -4px 0px 0px #00000017 inset;
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.form__description {
+  text-align: center;
+  color: #bab7d4;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 26px;
+}
+
+.form__description__link {
+  color: #ff7979;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 26px;
+  border: 0;
+  background-color: transparent;
+}
+/* content form end */
